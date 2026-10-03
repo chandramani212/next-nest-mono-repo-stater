@@ -10,7 +10,7 @@ import {
 } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiParam } from '@nestjs/swagger';
 
-import type { CreateLinkDto, UpdateLinkDto } from '@repo/backend';
+import { CreateLinkDto, UpdateLinkDto } from '@repo/backend';
 
 import { LinksService } from './links.service';
 
