@@ -17,7 +17,12 @@
       "cache": false,
       "persistent": true
     },
-    "test": {},
-    "test:e2e": {}
+    "test": {
+      "dependsOn": ["^build"],
+      "outputs": ["coverage/**"]
+    },
+    "test:e2e": {
+      "dependsOn": ["^build"]
+    }
   }
 }
